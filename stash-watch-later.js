@@ -5,7 +5,7 @@
 // @downloadURL https://raw.githubusercontent.com/dorstmedia/stash-watch-later/master/stash-watch-later.js
 // @updateURL   https://raw.githubusercontent.com/dorstmedia/stash-watch-later/master/stash-watch-later.js
 // @namespace   https://github.com/dorstmedia/stash-watch-later
-// @version     0.1.1.1
+// @version     0.0.0.2
 // @description Adds button to toggle Watch Later Tags for Scene
 // @author      dorstmedia
 // @match       http://localhost:9999/*
@@ -102,7 +102,7 @@
             let wlBtnStyle="opacity: 0.5;";
             if (tags.includes('3060')) wlBtnStyle="color:#ff7373; opacity: 1;"
 
-            const wlBtn=createElementFromHTML('<a style="position: absolute;  left: .65rem; bottom: 1.4%;" href="#" data-sceneID="'+sceneID+'" id="wl_btn_scene_'+sceneID+'" class="wl_btn_scene"><button style="'+wlBtnStyle+'" type="button" class="minimal mousetrap favorite-button not-favorite btn btn-primary"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" class="svg-inline--fa fa-heart fa-2x fa-icon " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"></path></svg></button></a>');
+            const wlBtn=createElementFromHTML('<a style="position: absolute;  left: .65rem; bottom: 1.4%;" href="#" data-sceneID="'+sceneID+'" id="wl_btn_scene_'+sceneID+'" class="wl_btn_scene"><button style="'+wlBtnStyle+'" type="button" class="minimal mousetrap favorite-button not-favorite btn btn-primary"><svg style="filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" class="svg-inline--fa fa-heart fa-2x fa-icon " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"></path></svg></button></a>');
             document.querySelectorAll('#wl_btn_scene_'+sceneID).forEach(e => e.remove());
             sceneCard.appendChild(wlBtn);
             wlBtn.addEventListener('click', function(event) {
@@ -127,7 +127,7 @@
             let wlBtnStyle="font-size: 0.65rem;";
             if (tags.includes('3060')) wlBtnStyle=wlBtnStyle+" color:#ff7373;"
 
-            const wlBtn=createElementFromHTML('<div class="nav-item"><a href="#" data-sceneID="'+sceneID+'" id="wl_btn_scene_'+sceneID+'" class="wl_btn_scene"><button title="Watch Later" style="'+wlBtnStyle+'" type="button" class="minimal mousetrap favorite-button not-favorite btn btn-primary"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" class="svg-inline--fa fa-heart fa-2x fa-icon " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"></path></svg></button></a></div>');
+            const wlBtn=createElementFromHTML('<div class="nav-item"><a href="#" data-sceneID="'+sceneID+'" id="wl_btn_scene_'+sceneID+'" class="wl_btn_scene"><button title="Watch Later" style="'+wlBtnStyle+'" type="button" class="minimal mousetrap favorite-button not-favorite btn btn-primary"><svg style="filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" class="svg-inline--fa fa-heart fa-2x fa-icon " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"></path></svg></button></a></div>');
 
             const nav_tabs=document.querySelector('.scene-tabs .nav-tabs');
             document.querySelectorAll('#wl_btn_scene_'+sceneID).forEach(e => e.remove());
