@@ -5,7 +5,7 @@
 // @downloadURL https://raw.githubusercontent.com/dorstmedia/stash-watch-later/main/dist/stash-watch-later.js
 // @updateURL   https://raw.githubusercontent.com/dorstmedia/stash-watch-later/main/dist/stash-watch-later.js
 // @namespace   https://github.com/dorstmedia/stash-watch-later
-// @version     0.1.0.0
+// @version     0.1.0.1
 // @description Adds button to toggle Watch Later Tags for Scene
 // @author      dorstmedia
 // @match       http://localhost:9999/*
