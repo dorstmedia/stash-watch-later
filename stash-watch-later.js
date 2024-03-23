@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        Stash Watch Later Button
-// @icon        https://raw.githubusercontent.com/dorstmedia/stash-ai-tags/main/_media/stashapp-favicon.ico
+// @icon        https://raw.githubusercontent.com/dorstmedia/stash-watch-later/main/dist/stashapp-favicon.ico
 // @require     https://raw.githubusercontent.com/stg-annon/stash-userscripts/main/src/StashUserscriptLibrary.js
 // @downloadURL https://raw.githubusercontent.com/dorstmedia/stash-watch-later/main/dist/stash-watch-later.js
 // @updateURL   https://raw.githubusercontent.com/dorstmedia/stash-watch-later/main/dist/stash-watch-later.js
